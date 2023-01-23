@@ -27,6 +27,7 @@ function App() {
     }
   };
 
+  //function to start the time
   const play = () => {
     let second = 1000; //1000 ms instead of 1 second
     let date = new Date().getTime();
@@ -53,12 +54,14 @@ function App() {
     setStartTimer(!startTimer);
   }
 
+  //function to reset the time
   const reset = () => {
     return (
       setTime(sessionTime)
     );
   }
 
+  //function to change the format of time
   const timeFormat = (time) => {
     let minute = Math.floor(time / 60);
     let second = time % 60;
@@ -94,7 +97,7 @@ function App() {
   );
 }
 
-
+// component for the break length and session length
 const Length = ({title, changeTime, type, time, timeFormat}) => {
   return (
     <div>
