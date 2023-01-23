@@ -24,20 +24,24 @@
   color: white;
 }
 
+.time-sets button {
+ margin: 20px;
+}
+
 .time {
   margin: auto;
   margin-top: -30px;
 }
 
-.App-link {
-  color: #61dafb;
+.header {
+  display: flex;
+  flex-direction: row;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.length {
+  margin: 40px;
+}
+
+.session {
+  margin-top: -30px;
 }
