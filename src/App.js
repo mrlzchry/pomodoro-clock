@@ -149,6 +149,9 @@ function App() {
           </button>
           <audio id="beep" src ='https://actions.google.com/sounds/v1/alarms/alarm_clock.ogg'></audio>
         </div>
+        <h6>Designed and coded by</h6>
+        <h6>Ammarul Anandzachery</h6>
+        <h7><a href="https://github.com/mrlzchry/pomodoro-clock/tree/main/src">Source Code</a></h7>
     </div>
   );
 }
@@ -160,11 +163,11 @@ const Length = ({title, changeTime, type, time, timeFormat,label,decrement,incre
       <h3 id={label}>{title}</h3>
       <div className="time-sets">
         <h4 className="break-time" id={length}>{timeFormat(time)}</h4>
-        <button className="btn-small teal lighten-2" id={decrement} onClick={() => changeTime(-60, type)}>
-          <i className=" material-icons teal lighten-2">remove_circle</i>
+        <button className="btn-floating btn-small teal lighten-2 waves-effect waves-light" id={decrement} onClick={() => changeTime(-60, type)}>
+          <i className=" material-icons teal lighten-2">arrow_drop_down</i>
         </button>
-        <button className="btn-small teal lighten-2" id={increment} onClick={() => changeTime(60, type)}>
-          <i className=" material-icons teal lighten-2">add_circle</i>
+        <button className="btn-floating btn-small waves-effect waves-light teal lighten-2 " id={increment} onClick={() => changeTime(60, type)}>
+          <i className=" material-icons teal lighten-2">arrow_drop_up</i>
         </button>
       </div>
     </div>
